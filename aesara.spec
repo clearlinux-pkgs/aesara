@@ -4,7 +4,7 @@
 #
 Name     : aesara
 Version  : 2.2.6
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/9d/be/c6c9284b71a88e1b7b9f0f949e844ac5237283faf367a14031b9c131f9d5/aesara-2.2.6.tar.gz
 Source0  : https://files.pythonhosted.org/packages/9d/be/c6c9284b71a88e1b7b9f0f949e844ac5237283faf367a14031b9c131f9d5/aesara-2.2.6.tar.gz
 Summary  : Optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.
@@ -97,7 +97,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635979452
+export SOURCE_DATE_EPOCH=1635980247
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -119,6 +119,9 @@ python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
+## Remove excluded files
+rm -f %{buildroot}*/usr/lib/python*/site-packages/bin/__init__.py
+rm -f %{buildroot}*/usr/lib/python*0/site-packages/bin/__pycache__/__init__.cpython-*.pyc
 
 %files
 %defattr(-,root,root,-)
