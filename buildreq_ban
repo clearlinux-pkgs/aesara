@@ -1,2 +1,7 @@
 # This file contains build requirements that get picked up but are
 # undesirable. One entry per line, no whitespace.
+pypi(jaxlib)
+pypi(numba)
+pypi(numba_scipy)
+pypi(pypolyagamma)
+pypi(versioneer)
