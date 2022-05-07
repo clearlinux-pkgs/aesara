@@ -1,5 +1,5 @@
 PKG_NAME := aesara
-URL = https://files.pythonhosted.org/packages/96/30/975f31a2ad93c8316e06fcb001a589ba021e8c9aa16867c1cddc98cf0d2a/aesara-2.6.4.tar.gz
+URL = https://files.pythonhosted.org/packages/c2/69/450859acbd574f28c204e9d6241c928c86dcef7dd375788c1e4ca5ac7aee/aesara-2.6.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
