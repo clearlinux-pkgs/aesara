@@ -4,7 +4,7 @@
 #
 Name     : aesara
 Version  : 2.7.3
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/45/3f/eec30e0640c84794298fa06d51407a1d67417f7a5807ef858b44c8cbd4c9/aesara-2.7.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/45/3f/eec30e0640c84794298fa06d51407a1d67417f7a5807ef858b44c8cbd4c9/aesara-2.7.3.tar.gz
 Summary  : Optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.
@@ -111,7 +111,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655666308
+export SOURCE_DATE_EPOCH=1656369087
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -153,7 +153,7 @@ popd
 ## Remove excluded files
 rm -f %{buildroot}*/usr/lib/python*/site-packages/bin/__init__.py
 rm -f %{buildroot}*/usr/lib/python*0/site-packages/bin/__pycache__/__init__.cpython-*.pyc
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
