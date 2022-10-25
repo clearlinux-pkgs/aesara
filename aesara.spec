@@ -4,7 +4,7 @@
 #
 Name     : aesara
 Version  : 2.8.7
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/93/f9/147e7aa2faf062f8b444947f009f6b20a3d8c4037232558ef8b5e9848cdc/aesara-2.8.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/93/f9/147e7aa2faf062f8b444947f009f6b20a3d8c4037232558ef8b5e9848cdc/aesara-2.8.7.tar.gz
 Summary  : Optimizing compiler for evaluating mathematical expressions on CPUs and GPUs.
