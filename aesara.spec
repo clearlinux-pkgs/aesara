@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : aesara
-Version  : 2.9.0
-Release  : 47
-URL      : https://files.pythonhosted.org/packages/f8/bb/d1e1ccf2d7d9f73ba47ba7eaa7d16a5036d009f61760d875dfd110fd032f/aesara-2.9.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/f8/bb/d1e1ccf2d7d9f73ba47ba7eaa7d16a5036d009f61760d875dfd110fd032f/aesara-2.9.0.tar.gz
+Version  : 2.9.1
+Release  : 48
+URL      : https://files.pythonhosted.org/packages/e5/3b/96f02764c71400f676fb352af5b11be3bd0472ffafd19c3b049092fbd43c/aesara-2.9.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e5/3b/96f02764c71400f676fb352af5b11be3bd0472ffafd19c3b049092fbd43c/aesara-2.9.1.tar.gz
 Summary  : A library for defining, optimizing, and efficiently evaluating mathematical expressions involving multi-dimensional arrays.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -98,10 +98,10 @@ python3 components for the aesara package.
 
 
 %prep
-%setup -q -n aesara-2.9.0
-cd %{_builddir}/aesara-2.9.0
+%setup -q -n aesara-2.9.1
+cd %{_builddir}/aesara-2.9.1
 pushd ..
-cp -a aesara-2.9.0 buildavx2
+cp -a aesara-2.9.1 buildavx2
 popd
 
 %build
@@ -109,7 +109,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683726762
+export SOURCE_DATE_EPOCH=1688045018
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
